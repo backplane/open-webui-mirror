@@ -1,4 +1,5 @@
 .git
 .github
 .pre-commit-config.yaml
+LICENSE.txt
 README.md
