@@ -80,6 +80,9 @@ jobs:
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args: |
+            VARIANT=${{ matrix.variant }}
+            SEMVER=${{ steps.latest-tag.outputs.result }}
 
       # https://github.com/peter-evans/dockerhub-description
       - name: Update Docker Hub Description
