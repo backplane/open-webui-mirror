@@ -60,7 +60,7 @@ jobs:
             suffix=-${{ matrix.variant }}
           tags: |
             type=semver,pattern={{version}},value=${{ steps.latest-tag.outputs.result }}
-            type=semver,pattern={{major}}.{{minor},value=${{ steps.latest-tag.outputs.result }}
+            type=semver,pattern={{major}}.{{minor}},value=${{ steps.latest-tag.outputs.result }}
             type=semver,pattern={{major}},value=${{ steps.latest-tag.outputs.result }}
           labels: |
             org.opencontainers.image.title=${{ github.event.repository.name }}
