@@ -9,4 +9,38 @@ Repo                                | URL
 
 This repo mirrors the Docker images published on the [open-webui project](https://github.com/open-webui/open-webui)'s GitHub Container Registry [repo](https://github.com/open-webui/open-webui/pkgs/container/open-webui) onto Docker Hub.
 
-This mirror project is not affiliated with `open-webui` and the only purpose is to enable pulling the images without needing to be logged into GHCR.
+
+## Notes
+
+* **This unofficial mirror project is not affiliated with the `open-webui` project** and the only purpose of the mirror is to enable pulling their images without being logged into GHCR.
+* Every day the most recent ([semver](https://semver.org/)) tag is automatically fetched from <https://github.com/open-webui/open-webui/tags> and images corresponding to that tag are mirrored to Docker Hub - even if there were no updates in the last 24 hours
+* When a semver tag is mirrored from upstream, we create separate "major", "minor", and "patch" -level docker tags from it.
+* All three variants are mirrored: `main` (no suffix), `ollama`, and `cuda`
+* Both the `linux/arm64` and `linux/amd64` architectures are mirrored for each variant.
+* The list of mirrored image tags can be found here: <https://hub.docker.com/r/backplane/open-webui-mirror/tags>
+
+## Examples
+
+### pulling a major version tag
+
+```
+docker pull backplane/open-webui-mirror:0
+docker pull backplane/open-webui-mirror:0-cuda
+docker pull backplane/open-webui-mirror:0-ollama
+```
+
+### pulling a minor version tag
+
+```
+docker pull backplane/open-webui-mirror:0.1
+docker pull backplane/open-webui-mirror:0.1-cuda
+docker pull backplane/open-webui-mirror:0.1-ollama
+```
+
+### pulling a specific patch version
+
+```
+docker pull backplane/open-webui-mirror:0.1.123
+docker pull backplane/open-webui-mirror:0.1.123-cuda
+docker pull backplane/open-webui-mirror:0.1.123-ollama
+```
