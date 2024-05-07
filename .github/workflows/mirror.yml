@@ -11,9 +11,9 @@ jobs:
       fail-fast: false
       matrix:
         variant:
-          - main
-          - cuda
-          - ollama
+          - ""
+          - "-cuda"
+          - "-ollama"
 
     steps:
       # https://github.com/actions/github-script
@@ -57,7 +57,7 @@ jobs:
           images: backplane/open-webui-mirror
           flavor: |
             latest=false
-            suffix=-${{ matrix.variant }}
+            suffix=${{ matrix.variant }}
           tags: |
             type=semver,pattern={{version}},value=${{ steps.latest-tag.outputs.result }}
             type=semver,pattern={{major}}.{{minor}},value=${{ steps.latest-tag.outputs.result }}

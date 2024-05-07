@@ -1,3 +1,3 @@
-ARG VARIANT=main
+ARG VARIANT=
 ARG SEMVER=v1.0.0
-FROM ghcr.io/open-webui/open-webui:${SEMVER}-${VARIANT}
+FROM ghcr.io/open-webui/open-webui:${SEMVER}${VARIANT}
