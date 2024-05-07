@@ -3,7 +3,7 @@
 Repo                                | URL
 ----------------------------------- | --------------------------------------------------------------------
 `open-webui-mirror` Docker Hub Repo | <https://hub.docker.com/r/backplane/open-webui-mirror>
-`open-webui-mirror` GitHub Repo     | <https://hub.docker.com/r/backplane/open-webui-mirror>
+`open-webui-mirror` GitHub Repo     | <https://github.com/backplane/open-webui-mirror/>
 `open-webui` GitHub Repo            | <https://github.com/open-webui/open-webui>
 `open-webui` GHCR Repo              | <https://github.com/open-webui/open-webui/pkgs/container/open-webui>
 
