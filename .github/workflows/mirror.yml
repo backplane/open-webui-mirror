@@ -83,7 +83,15 @@ jobs:
             VARIANT=${{ matrix.variant }}
             SEMVER=${{ steps.latest-tag.outputs.result }}
 
-      # https://github.com/peter-evans/dockerhub-description
+  update-readme:
+    runs-on: ubuntu-latest
+    needs: mirror
+    steps:
+      # https://github.com/actions/checkout
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+        # https://github.com/peter-evans/dockerhub-description
       - name: Update Docker Hub Description
         uses: peter-evans/dockerhub-description@v4
         with:
