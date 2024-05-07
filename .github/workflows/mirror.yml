@@ -54,7 +54,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: backplane/open-webui-mirror
+          images: backplane/open-webui
           flavor: |
             latest=false
             suffix=${{ matrix.variant }}
@@ -97,4 +97,4 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USER }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
-          repository: ${{ github.repository }}
+          repository: backplane/open-webui
