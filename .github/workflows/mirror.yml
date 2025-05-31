@@ -92,7 +92,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-        # https://github.com/peter-evans/dockerhub-description
+      # https://github.com/peter-evans/dockerhub-description
       - name: Update Docker Hub Description
         uses: peter-evans/dockerhub-description@v4
         with:
