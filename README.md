@@ -14,12 +14,13 @@ The open-webui project [recently added](https://github.com/open-webui/open-webui
 
 This repo mirrors the Docker images published on the [open-webui project](https://github.com/open-webui/open-webui)'s GitHub Container Registry [repo](https://github.com/open-webui/open-webui/pkgs/container/open-webui) onto Docker Hub.
 
-| Repo                            | URL                                                                  |
-| ------------------------------- | -------------------------------------------------------------------- |
-| `open-webui` GitHub Repo        | <https://github.com/open-webui/open-webui>                           |
-| `open-webui` GHCR Repo          | <https://github.com/open-webui/open-webui/pkgs/container/open-webui> |
-| `open-webui` Docker Hub Repo    | <https://hub.docker.com/r/backplane/open-webui>                      |
-| `open-webui-mirror` GitHub Repo | <https://github.com/backplane/open-webui-mirror/>                    |
+| Repo                                                     | URL                                                                  |
+| -------------------------------------------------------- | -------------------------------------------------------------------- |
+| `open-webui` GitHub Repo                                 | <https://github.com/open-webui/open-webui>                           |
+| `open-webui` GHCR Repo                                   | <https://github.com/open-webui/open-webui/pkgs/container/open-webui> |
+| `openwebui/open-webui` Docker Hub Repo                   | <https://hub.docker.com/r/openwebui/open-webui>                      |
+| `backplane/open-webui` Docker Hub Repo (obsolete mirror) | <https://hub.docker.com/r/backplane/open-webui>                      |
+| `open-webui-mirror` GitHub Repo                          | <https://github.com/backplane/open-webui-mirror/>                    |
 
 ## Notes
 
