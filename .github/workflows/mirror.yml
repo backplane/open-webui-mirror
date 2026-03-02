@@ -13,7 +13,8 @@ jobs:
       matrix:
         variant:
           - ""
-          - "-cuda"
+          # - "-cuda" # this variant's mirror is broken, the issue "unexpected status from PUT request" / "400 Bad request"
+          # will probably not be resovled before this mirror is retired.
           - "-ollama"
           - "-slim"
 
