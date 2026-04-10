@@ -1,7 +1,8 @@
 name: Mirror Releases
 "on":
-  schedule:
-    - cron: "56 13 * * *"
+  # disabled as part of mirror wind-down
+  # schedule:
+  #   - cron: "56 13 * * *"
   workflow_dispatch:
 jobs:
   mirror:
